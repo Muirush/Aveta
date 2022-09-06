@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings3"
+        >
+    </item>
+    <item android:id="@+id/reportsPage"
+        android:title="Reports"
+        android:icon="@drawable/reports"
+        >
+    </item>
+    <item android:id="@+id/addPost"
+        android:title="Add note"
+        android:icon="@drawable/add_note"
+        >
+    </item>
+    <item android:id="@+id/reminders"
+        android:title="Reminder"
+        android:icon="@drawable/reminder"
+        >
+    </item>
+    <item android:id="@+id/wallet1"
+        android:title="Wallet"
+        android:icon="@drawable/wallet"
+        >
+    </item>
+
+</menu>

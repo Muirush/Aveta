@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.front.aveta.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_main_to_signUp"
+            app:destination="@id/signUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.front.aveta.signIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signIn_to_welcome"
+            app:destination="@id/welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.front.aveta.signUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_signUpCode"
+            app:destination="@id/signUpCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCode"
+        android:name="com.front.aveta.signUpCode"
+        android:label="fragment_sign_up_code"
+        tools:layout="@layout/fragment_sign_up_code" >
+        <action
+            android:id="@+id/action_signUpCode_to_signIn"
+            app:destination="@id/signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.front.aveta.Welcome"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcome_to_cycleLengthSelectionDay"
+            app:destination="@id/cycleLengthSelectionDay" />
+    </fragment>
+    <fragment
+        android:id="@+id/cycleLengthSelection"
+        android:name="com.front.aveta.CycleLengthSelection"
+        android:label="fragment_cycle_length_selection"
+        tools:layout="@layout/fragment_cycle_length_selection" >
+        <action
+            android:id="@+id/action_cycleLengthSelection_to_selectPet"
+            app:destination="@id/selectPet" />
+    </fragment>
+    <fragment
+        android:id="@+id/cycleLengthSelectionDay"
+        android:name="com.front.aveta.CycleLengthSelectionDay"
+        android:label="fragment_cycle_length_selection_day"
+        tools:layout="@layout/fragment_cycle_length_selection_day" >
+        <action
+            android:id="@+id/action_cycleLengthSelectionDay_to_cycleLengthSelection"
+            app:destination="@id/cycleLengthSelection" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectPet"
+        android:name="com.front.aveta.SelectPet"
+        android:label="fragment_select_pet"
+        tools:layout="@layout/fragment_select_pet" >
+        <action
+            android:id="@+id/action_selectPet_to_calendar2"
+            app:destination="@id/calendar" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.front.aveta.Calendar"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendar_to_reportsPage"
+            app:destination="@id/reportsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportsPage"
+        android:name="com.front.aveta.ReportsPage"
+        android:label="fragment_reports_page"
+        tools:layout="@layout/fragment_reports_page" >
+        <action
+            android:id="@+id/action_reportsPage_to_settingReportspage"
+            app:destination="@id/settingReportspage" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingReportspage"
+        android:name="com.front.aveta.SettingReportspage"
+        android:label="fragment_setting_reportspage"
+        tools:layout="@layout/fragment_setting_reportspage" >
+        <action
+            android:id="@+id/action_settingReportspage_to_reminders"
+            app:destination="@id/reminders" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminders"
+        android:name="com.front.aveta.Reminders"
+        android:label="fragment_reminders"
+        tools:layout="@layout/fragment_reminders" >
+        <action
+            android:id="@+id/action_reminders_to_tarrifPlan"
+            app:destination="@id/tarrifPlan" />
+    </fragment>
+    <fragment
+        android:id="@+id/tarrifPlan"
+        android:name="com.front.aveta.TarrifPlan"
+        android:label="fragment_tarrif_plan"
+        tools:layout="@layout/fragment_tarrif_plan" >
+        <action
+            android:id="@+id/action_tarrifPlan_to_addPost"
+            app:destination="@id/addPost" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPost"
+        android:name="com.front.aveta.AddPost"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" >
+        <action
+            android:id="@+id/action_addPost_to_wallet1"
+            app:destination="@id/wallet1" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallet1"
+        android:name="com.front.aveta.Wallet1"
+        android:label="fragment_wallet1"
+        tools:layout="@layout/fragment_wallet1" >
+        <action
+            android:id="@+id/action_wallet1_to_wallet2"
+            app:destination="@id/wallet2" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallet2"
+        android:name="com.front.aveta.Wallet2"
+        android:label="fragment_wallet2"
+        tools:layout="@layout/fragment_wallet2" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.front.aveta.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/privacyPolicy"
+        android:name="com.front.aveta.PrivacyPolicy"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/languageSettings"
+        android:name="com.front.aveta.LanguageSettings"
+        android:label="fragment_language_settings"
+        tools:layout="@layout/fragment_language_settings" />
+    <fragment
+        android:id="@+id/contactInfo"
+        android:name="com.front.aveta.ContactInfo"
+        android:label="fragment_contact_info"
+        tools:layout="@layout/fragment_contact_info" />
+    <fragment
+        android:id="@+id/appSuggestions"
+        android:name="com.front.aveta.AppSuggestions"
+        android:label="fragment_app_suggestions"
+        tools:layout="@layout/fragment_app_suggestions" />
+</navigation>

@@ -1,0 +1,52 @@
+package com.front.aveta
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.front.aveta.databinding.FragmentCalendarBinding
+import com.front.aveta.databinding.FragmentReportsPageBinding
+
+
+class Calendar : Fragment(R.layout.fragment_calendar) {
+    private var _binding: FragmentCalendarBinding? = null
+    private val binding get() = _binding!!
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        _binding = FragmentCalendarBinding.bind(view)
+
+
+        ///Bottom Menu
+        binding.menuSettings.setOnClickListener(){
+            findNavController().navigate(R.id.settings)
+        }
+
+        binding.menuReports.setOnClickListener(){
+            findNavController().navigate(R.id.reportsPage)
+        }
+        binding.menuAddnote.setOnClickListener(){
+            findNavController().navigate(R.id.addPost)
+        }
+        binding.menuReminder.setOnClickListener(){
+            findNavController().navigate(R.id.reminders)
+        }
+        binding.menuWallet.setOnClickListener(){
+            findNavController().navigate(R.id.wallet1)
+        }
+
+        ///Bottom Menu ends
+
+
+
+
+
+        binding.materialButton2.setOnClickListener(){
+            findNavController().popBackStack()
+        }
+    }
+
+}

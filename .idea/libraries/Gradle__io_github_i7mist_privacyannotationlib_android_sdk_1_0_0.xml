@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.i7mist:privacyannotationlib-android-sdk:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.i7mist/privacyannotationlib-android-sdk/1.0.0/644e303125edaf39ac0fd6b7e0e3b5d6fd894cac/privacyannotationlib-android-sdk-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.i7mist/privacyannotationlib-android-sdk/1.0.0/a52f4500df378cec14b53f2110aa094cd798ffca/privacyannotationlib-android-sdk-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.i7mist/privacyannotationlib-android-sdk/1.0.0/63514cf7fbb745218cb19a99372815b887d99dfc/privacyannotationlib-android-sdk-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

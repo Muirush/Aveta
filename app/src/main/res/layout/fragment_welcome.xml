@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/curved_top_fade"
+    android:orientation="vertical"
+    tools:context=".Welcome">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#69488D"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/poppins"
+        android:textSize="48dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How long is your menstrual cycle?"
+        android:textSize="21sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:textColor="#69488D"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The duration of two periods start date, usually 23-35 days"
+        android:textSize="13.5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+
+        android:fontFamily="@font/poppins"
+        android:textColor="#69488D"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="28"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:textColorHint="#69488D"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How long is your period?"
+        android:textSize="21sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:textColor="#69488D"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bleeding usually lasts between 4-7 days"
+        android:textSize="13.5dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="#69488D"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="4"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:textColorHint="#69488D"
+        android:fontFamily="@font/poppins"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When did your last period start?"
+        android:textSize="21sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:textColor="#69488D"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tapToSet"
+        android:hint="Tap to set"
+        android:textSize="24sp"
+        android:textColorHint="#69488D"
+        android:fontFamily="@font/poppins"
+        android:inputType="number"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="21sp"
+            android:fontFamily="@font/poppins"
+            android:text="CANCEL"
+            android:textColor="@color/c2"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardViewDone"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDone"
+            android:layout_width="125dp"
+            android:layout_height="43dp"
+
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintHorizontal_bias="0.695"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/gradient_background_1"
+                >
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+            />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
